@@ -1,0 +1,8 @@
+Breakpoint 1, main () at problem02.c:6
+6       a=2,b=3;
+(gdb) n
+[New Thread 24984.0x3f60]
+7       sum = a+b;       
+(gdb) n
+8       printf ("%d\n",sum);
+(gdb)
