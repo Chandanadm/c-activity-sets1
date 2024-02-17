@@ -1,0 +1,49 @@
+(gdb) b main
+Breakpoint 1 at 0x40146e: file problem03.c, line 9.
+(gdb) r
+Starting program: C:\Users\D M CHANDANA\Desktop\c-activity-sets1-1\set01/a.exe 
+[New Thread 32424.0x39d4]
+[New Thread 32424.0x4fa8]
+
+Breakpoint 1, main () at problem03.c:9
+9           a = input();
+(gdb) s
+input () at problem03.c:18
+18          printf("Enter the value: ");
+(gdb) s
+Enter the value: 19         scanf("%d", &x);
+(gdb) s
+s
+20          return x;
+(gdb) s
+21      }
+(gdb) s
+main () at problem03.c:10
+10          b = input();
+(gdb) s
+input () at problem03.c:18
+18          printf("Enter the value: ");
+(gdb) s
+Enter the value: 19         scanf("%d", &x);
+(gdb) s
+20          return x;
+(gdb) s
+21      }
+(gdb) s
+main () at problem03.c:11
+11          sum = add(a, b);
+(gdb) s
+add (a=6422476, b=6422476) at problem03.c:24
+24          int sum = a + b;
+(gdb) s
+25          return sum;
+(gdb) s
+26      }
+(gdb) s
+main () at problem03.c:12
+12          output(a, b, sum);
+(gdb) s
+output (a=6422476, b=6422476, sum=12844952) at problem03.c:29
+29          printf("The sum of %d and %d is %d\n", a, b, sum);
+(gdb) s
+The sum of 6422476 and 6422476 is 12844952

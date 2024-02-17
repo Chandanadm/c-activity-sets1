@@ -1,0 +1,33 @@
+ b main
+Breakpoint 1 at 0x40146e: file problem04.c, line 10.
+(gdb) r
+Starting program: C:\Users\D M CHANDANA\Desktop\c-activity-sets1-1\set01/a.exe 
+[New Thread 12420.0x18e4]
+[New Thread 12420.0x7a4c]
+
+Breakpoint 1, main () at problem04.c:10
+10          input(&a, &b);
+(gdb) s
+input (a=0x61ff1c, b=0x61ff18) at problem04.c:23
+23          printf("Enter two numbers: ");
+(gdb) s
+Enter two numbers: 24       scanf("%d %d", a, b);
+(gdb) s
+s
+25      }
+(gdb) s
+main () at problem04.c:13
+13          add(a, b, &sum);
+(gdb) s
+add (a=4194432, b=3080192, sum=0x61ff14) at problem04.c:28
+28          *sum = a + b;
+(gdb) s
+29      }
+(gdb) s
+main () at problem04.c:16
+16          output(a, b, sum);
+(gdb) s
+output (a=4194432, b=3080192, sum=7274624) at problem04.c:32
+32          printf("The sum of %d and %d is %d\n", a, b,sum);
+(gdb) s
+The sum of 4194432 and 3080192 is 7274624
