@@ -4,7 +4,7 @@ int input();
 int add(int a, int b);
 void output(int a, int b, int sum);
 
-int main() {
+int main(){
     int a, b, sum;
     a = input();
     b = input();
