@@ -1,31 +1,36 @@
 #include <stdio.h>
+int input_n();
+int sum_n_nos(int n);
+void output(int n, int sum);
 
-void input(float *base, float *height);
-void find_area(float base, float height, float *area);
-void output(float base, float height, float area);
-
-int main() {
-    float base, height, area;
-
-    input(&base, &height);
-    find_area(base, height, &area);
-    output(base, height, area);
-
+int main()   
+{
+    int n, sum;
+    n = input_n(); 
+    sum = sum_n_nos(n);  
+    output(n, sum); 
     return 0;
 }
 
-void input(float *base, float *height) {
-    printf("Enter the base of the triangle: ");
-    scanf("%f", base);
-
-    printf("Enter the height of the triangle: ");
-    scanf("%f", height);
+int input_n()  
+{
+    int n;
+    printf("Enter a natural number (n): "); 
+    scanf("%d", &n);
+    return n; 
 }
 
-void find_area(float base, float height, float *area) {
-    *area = 0.5 * base * height;
+int sum_n_nos(int n) 
+{
+    int sum = 0; 
+    for (int i = 1; i <= n; i++) 
+    {
+        sum += i;   
+    }
+    return sum;
 }
-
-void output(float base, float height, float area) {
-    printf("The area of the triangle with base %.6f and height %.6f is %.6f\n", base, height, area);
+ 
+void output(int n, int sum)  
+{
+    printf("The sum of natural numbers from 1 to %d is %d\n", n , sum);
 }
