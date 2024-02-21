@@ -1,37 +1,42 @@
 #include <stdio.h>
-#include <string.h>
 
-void input_string(char *a);
-void str_reverse(char *str, char *rev_str);
-void output(char *a, char *reverse_a);
+int input_number();
+int is_composite(int n);
+void output(int n, int result);
 
 int main() {
-    char input_str[100];
-    char reversed_str[100];
+    int number, result;
 
-    input_string(input_str);
-    str_reverse(input_str, reversed_str);
-    output(input_str, reversed_str);
+    number = input_number();
+    result = is_composite(number);
+    output(number, result);
 
     return 0;
 }
 
-void input_string(char *a) {
-    printf("Enter a string: ");
-    scanf("%s", a);
+int input_number() {
+    int num;
+    printf("Enter a number: ");
+    scanf("%d", &num);
+    return num;
 }
 
-void str_reverse(char *str, char *rev_str) {
-    int length = strlen(str);
-    int i, j;
-
-    for (i = length - 1, j = 0; i >= 0; --i, ++j) {
-        rev_str[j] = str[i];
+int is_composite(int n) {
+    int i, factors = 0;
+    
+    for (i = 1; i <= n; ++i) {
+        if (n % i == 0) {
+            factors++;
+        }
     }
 
-    rev_str[j] = '\0';
+    return (factors > 2);
 }
 
-void output(char *a, char *reverse_a) {
-    printf("The reverse of \"%s\" is \"%s\"\n", a, reverse_a);
+void output(int n, int result) {
+    if (result) {
+        printf("%d is a composite number.\n", n);
+    } else {
+        printf("%d is not a composite number.\n", n);
+    }
 }

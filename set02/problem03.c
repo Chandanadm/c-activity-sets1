@@ -37,6 +37,6 @@ void output(int n, int result) {
     if (result) {
         printf("%d is a composite number.\n", n);
     } else {
-        printf("%d is not a composite number.\n", n) ;}
+        printf("%d is not a composite number.\n", n);
+    }
 }
- 
