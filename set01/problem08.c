@@ -1,38 +1,60 @@
 #include <stdio.h>
-
-int input_side();
-int check_scalene(int a, int b, int c);
-void output(int a, int b, int c, int isscalene);
+int input_array_size();
+void input_array(int n, int a[n]);
+int sum_n_array(int n, int a[n]);
+void output(int n, int a[n], int sum);
 
 int main() {
-    int side1, side2, side3, isscalene;
-
-    side1 = input_side();
-    side2 = input_side();
-    side3 = input_side();
-
-    isscalene = check_scalene(side1, side2, side3);
-
-    output(side1, side2, side3, isscalene);
-
+    int n, sum;
+    n = input_array_size(); 
+    int a[n]; 
+    input_array(n, a); 
+    sum = sum_n_array(n, a); 
+    output(n, a, sum); 
     return 0;
 }
 
-int input_side() {
-    int side;
-    printf("Enter the length of a side: ");
-    scanf("%d", &side);
-    return side;
+
+int input_array_size() 
+{
+    int n;
+    printf("Input array size: ");
+    scanf("%d", &n);
+    return n;
 }
 
-int check_scalene(int a, int b, int c) {
-    return (a != b && b != c && c != a);
+
+void input_array(int n, int a[n]) 
+{
+    printf("Input the array:\n");        
+    for (int i = 0; i < n; i++) 
+    {
+        scanf("%d", &a[i]);
+    }
 }
 
-void output(int a, int b, int c, int isscalene) {
-    if (isscalene) {
-        printf("The triangle with sides %d, %d, and %d is scalene\n", a, b, c);
-    } else {
-        printf("The triangle with sides %d, %d, and %d is not scalene\n", a, b, c);
- }
+
+int sum_n_array(int n, int a[n]) 
+{
+    int sum = 0;
+    for (int i = 0; i < n; i++) 
+    {
+        sum += a[i];           
+    }
+    return sum;
+}
+
+
+void output(int n, int a[n], int sum) 
+{
+    printf("Sum of ");
+    for (int i = 0; i < n; i++) 
+    {
+        printf("%d", a[i]);
+        if (i != n - 1) 
+        {
+            printf("+");
+        }
+    }
+    printf(" is %d\n", sum);
 }
