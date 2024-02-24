@@ -1,0 +1,32 @@
+PS C:\Users\D M CHANDANA\Desktop\c-activity-sets1-1\set01> gcc -g -O0 problem05.c -o problem05.exe
+PS C:\Users\D M CHANDANA\Desktop\c-activity-sets1-1\set01> gdb .\problem05.exe
+GNU gdb (GDB) 7.6.1
+Copyright (C) 2013 Free Software Foundation, Inc.
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "mingw32".
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>...
+Reading symbols from C:\Users\D M CHANDANA\Desktop\c-activity-sets1-1\set01\problem05.exe...done.
+(gdb) r
+Starting program: C:\Users\D M CHANDANA\Desktop\c-activity-sets1-1\set01/.\problem05.exe 
+[New Thread 3136.0x42dc]
+Enter the value: 5
+Enter the value: 4
+Enter the value: 6
+The largest of 5 4 6  is 6[Inferior 1 (process 3136) exited normally]
+(gdb) quit
+PS C:\Users\D M CHANDANA\Desktop\c-activity-sets1-1\set01> git push
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 347 bytes | 173.00 KiB/s, done.
+Total 4 (delta 3), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (3/3), completed with 3 local objects.
+To https://github.com/Chandanadm/c-activity-sets1.git
+   b5c11a3..2aa1ff2  main -> main
+PS C:\Users\D M CHANDANA\Desktop\c-activity-sets1-1\set01> git push
+Everything up-to-date
+PS C:\Users\D M CHANDANA\Desktop\c-activity-sets1-1\set01> gdb -g -O0 problem04.c 
