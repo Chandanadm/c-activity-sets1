@@ -31,5 +31,5 @@ int sum_n_nos(int n)
  
 void output(int n, int sum)  
 {
-    printf("The sum of natural numbers from 1 to %d is %d ", n , sum);
+    printf("The sum of natural numbers from 1 to %d is %d \n ", n , sum);
 } 
