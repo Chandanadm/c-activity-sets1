@@ -17,8 +17,7 @@ int input_n()
     int n;
     printf("Enter a natural number (n): "); 
     scanf("%d", &n);
-    return n; 
-}
+    return n; }
 
 int sum_n_nos(int n) 
 {
@@ -33,4 +32,4 @@ int sum_n_nos(int n)
 void output(int n, int sum)  
 {
     printf("The sum of natural numbers from 1 to %d is %d ", n , sum);
-}
+} 
