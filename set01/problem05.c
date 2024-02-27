@@ -41,6 +41,6 @@ else {
 }
 
 void output(int a, int b, int c, int largest) {
-    printf("The largest of %d %d %d  is %d", a, b, c, largest);
+    printf("The largest of %d %d %d  is %d \n", a, b, c, largest);
 }
 
