@@ -21,10 +21,10 @@ int main()
 
 int get_n()
 {
-    int n;
+    int value;
     printf("Enter the number of complex numbers: ");
-    scanf("%d", &n);
-    return n;
+    scanf("%d", &value);
+    return value;
 }
 Complex input_complex()
 {
