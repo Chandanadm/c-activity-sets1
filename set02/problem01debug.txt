@@ -1,0 +1,34 @@
+PS C:\Users\D M CHANDANA\Desktop\c-activity-sets1-1\set02> gcc -g -O0 problem01.c -o problem01.exe
+PS C:\Users\D M CHANDANA\Desktop\c-activity-sets1-1\set02> gdb .\problem01.exe
+GNU gdb (GDB) 7.6.1
+Copyright (C) 2013 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.        
+and "show warranty" for details.
+This GDB was configured as "mingw32".
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>...
+(gdb) r
+Starting program: C:\Users\D M CHANDANA\Desktop\c-activity-sets1-1\set02/.\problem01.exe
+[New Thread 21740.0x73c]
+[New Thread 21740.0x2e68]
+Enter the base of the triangle: 6
+Enter the height of the triangle: 3
+The area of the triangle with base 6.000000 and height 3.000000 is 9.000000
+[Inferior 1 (process 21740) exited normally]
+(gdb) quit
+PS C:\Users\D M CHANDANA\Desktop\c-activity-sets1-1\set02> git ush
+git: 'ush' is not a git command. See 'git --help'.
+
+The most similar command is
+        push
+PS C:\Users\D M CHANDANA\Desktop\c-activity-sets1-1\set02> git push
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 348 bytes | 174.00 KiB/s, done.
+Total 4 (delta 3), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (3/3), completed with 3 local objects.
+To https://github.com/Chandanadm/c-activity-sets1.git
+   01f63ad..b389b72  main -> main
