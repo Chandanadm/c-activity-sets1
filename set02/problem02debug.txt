@@ -1,0 +1,35 @@
+PS C:\Users\D M CHANDANA\Desktop\c-activity-sets1-1\set02> git add .
+PS C:\Users\D M CHANDANA\Desktop\c-activity-sets1-1\set02> git commit -m "test"
+[main 43872e6] test
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+PS C:\Users\D M CHANDANA\Desktop\c-activity-sets1-1\set02> gcc -g -O0 problem02.c -o problem02.exe
+GNU gdb (GDB) 7.6.1
+Copyright (C) 2013 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "mingw32".
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>...
+Reading symbols from C:\Users\D M CHANDANA\Desktop\c-activity-sets1-1\set02\problem02.exe...done.
+(gdb) r
+Starting program: C:\Users\D M CHANDANA\Desktop\c-activity-sets1-1\set02/.\problem02.exe 
+[New Thread 19384.0x3ad8]
+[New Thread 19384.0x444c]
+Enter the length of a side: 6
+Enter the length of a side: 7
+Enter the length of a side: 8
+The triangle with sides 6, 7, and 8 is scalene
+[Inferior 1 (process 19384) exited normally]
+(gdb) quit
+PS C:\Users\D M CHANDANA\Desktop\c-activity-sets1-1\set02> git push
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 351 bytes | 175.00 KiB/s, done.
+Total 4 (delta 3), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (3/3), completed with 3 local objects.
+To https://github.com/Chandanadm/c-activity-sets1.git
+   89c3363..43872e6  main -> main
