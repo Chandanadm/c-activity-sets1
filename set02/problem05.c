@@ -27,8 +27,8 @@ int input() {
 int find_gcd(int a, int b) {
     int remainder;
 
-    while (b != 0) {
-        remainder = a % b;
+    while (b != 0){
+        remainder = a % b; 
         a = b;
         b = remainder;
     }
@@ -37,5 +37,5 @@ int find_gcd(int a, int b) {
 }
 
 void output(int a, int b, int gcd) {
-    printf("The GCD of %d and %d is %d\n",a, b, gcd);
+    printf("The GCD of %d and %d is %d",a, b, gcd);
 }

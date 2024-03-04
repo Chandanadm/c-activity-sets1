@@ -11,7 +11,7 @@ int main()
     Complex a, b, sum;
     printf("Enter the first complex number:\n");
     a = input_complex();
-    printf("Enter the second complex number:\n");
+    printf("Enter the second complex number:0 ");
     b = input_complex();
     sum = add_complex(a,b);
     output(a,b,sum);
