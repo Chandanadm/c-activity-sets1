@@ -1,0 +1,30 @@
+PS C:\Users\D M CHANDANA\Desktop\c-activity-sets1-1\set02> gcc -g -O0 problem07.c -o problem07.exe
+PS C:\Users\D M CHANDANA\Desktop\c-activity-sets1-1\set02> gdb .\problem07.exe
+GNU gdb (GDB) 7.6.1
+Copyright (C) 2013 Free Software Foundation, Inc.
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "mingw32".
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>...
+Reading symbols from C:\Users\D M CHANDANA\Desktop\c-activity-sets1-1\set02\problem07.exe...done.
+(gdb) r
+Starting program: C:\Users\D M CHANDANA\Desktop\c-activity-sets1-1\set02/.\problem07.exe
+[New Thread 34568.0x9680]
+[New Thread 34568.0x972c]
+Enter the base and altitude of the triangle: 6
+5
+The area of triangle with base = 6.000000 and altitude = 5.000000 is 15.000000
+[Inferior 1 (process 34568) exited normally]
+(gdb) quit
+PS C:\Users\D M CHANDANA\Desktop\c-activity-sets1-1\set02> git push
+Enumerating objects: 8, done.
+Counting objects: 100% (8/8), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (5/5), 417 bytes | 83.00 KiB/s, done.
+Total 5 (delta 3), reused 1 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (3/3), completed with 3 local objects.
+To https://github.com/Chandanadm/c-activity-sets1.git
+   0520c33..d222779  main -> main
